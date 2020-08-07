@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.navbar{margin-bottom: 0px; }
+  	.navbar a{font-size: 18px}
+  	.row.a{margin-top: 30px}
+  	.navbar .icon{display: none}
+  	@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar .icon {display: block;}
+}
+  </style>
+</head>
+<body style="background-image: url(library.jpeg); ; background-repeat: no-repeat center center fixed; background-size: cover;-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; overflow: hidden
+    ">
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html">eLibrary</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="home.html">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    	<li><a href="" class="icon" onclick=""><i class="fa fa-bars" ></i></a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+	<div class="row a">
+		<div class="col-xs-4">
+			<h1><font color="white">Admin Login</font></h1>
+			<br>
+			<form>
+				<div class="form-group">
+					<label for="email"><font color="white" size="3">Email:</font></label>
+					<input type="text" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+					<label for="pwd"><font color="white" size="3">Password:</font></label>
+					<input type="password" class="form-control" id="pwd">
+				</div>
+			</form>
+			<button class="btn btn-primary" onclick="location.href='admin_section.html'">Login</button>
+		</div>
+		<div class="col-xs-4 d-flex justify-content-center text-center">
+			<div style="padding-top: 100px"><font color="white" size="8">OR</font></div>
+		</div>
+		<div class="col-xs-4">
+			<h1><font color="white">Librarian Login</font></h1>
+			<br>
+			<form>
+				<div class="form-group">
+					<label for="email"><font color="white" size="3">Email:</font></label>
+					<input type="text" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+					<label for="pwd"><font color="white" size="3">Password:</font></label>
+					<input type="password" class="form-control" id="pwd">
+				</div>
+			</form>
+			<button class="btn btn-primary" onclick="location.href='librarian_section.html'">Login</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+

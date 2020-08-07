@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .navbar{margin-bottom: 0px; }
+    .navbar a{font-size: 18px}
+    .navbar .icon{display: none}
+    .a{padding-top: 50px}
+    .row{padding-top: 30px;}
+    @media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar .icon {display: block;}
+}
+</style>
+</head>
+<body style="background-image: url(1.jpg); ; background-repeat: no-repeat center center ; background-size: cover;
+ overflow: hidden
+">
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html">eLibrary</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="add_book.html">Add Book</a></li>
+      <li><a href="#">View Book</a></li>
+      <li><a href="issue_book.html">Issue Book</a></li>
+      <li><a href="#">View Issued Book</a></li>
+      <li><a href="return_book.html">Return Book</a></li>
+      <li><a href="home.html">Logout</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="" class="icon" onclick=""><i class="fa fa-bars" ></i></a></li>
+    </ul>
+  </div>
+</nav>
+<center class="a"><font color="white" size="8" style="font-family: ComicSans">ISSUE BOOK</font></center>
+<div class="row">
+  <div class="col-xs-3"></div>
+  <div class=col-xs-6>
+  <form>
+   <div class="form-group">
+    <label for="usr"><font color="white" size="4">Book No. :</font></label>
+    <input type="text" class="form-control" id="usr">
+   </div>
+   <div class="form-group">
+    <label for="email"><font color="white" size="4">Student ID:</font></label>
+    <input type="text" class="form-control" id="email">
+   </div>
+   <div class="form-group">
+    <label for="phn"><font color="white" size="4">Student Name:</font></label>
+    <input type="text" class="form-control" id="phn">
+   </div>
+   <div class="form-group">
+    <label for="pwd"><font color="white" size="4">Student Mobile:</font></label>
+    <input type="number" class="form-control" id="pwd">
+   </div>
+ </form>
+ <center><button class="btn btn-primary" style="width: 110px"><font size="3">Issue Book</font></button></center>
+</div>
+<div class="col-xs-3"></div>
+</div>
+</body>
+</html>
