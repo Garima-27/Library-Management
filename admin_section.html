@@ -8,11 +8,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style type="text/css">
-  	.navbar{margin-bottom: 0px; }
-  	.navbar a{font-size: 18px}
-  	.navbar .icon{display: none}
+    .navbar{margin-bottom: 0px; }
+    .navbar a{font-size: 18px}
+    .navbar .icon{display: none}
     .c{padding-top: 200px}
-  	@media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar .icon {display: block;}
 }
@@ -29,7 +29,7 @@
     <ul class="nav navbar-nav">
       <li><a href="home.html">Home</a></li>
       <li><a href="add_librarian.html">Add Librarian</a></li>
-      <li><a href="#">View Librarian</a></li>
+      <li><a href="http://localhost/form/view_librarian.php">View Librarian</a></li>
       <li><a href="home.html">Logout</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -38,5 +38,9 @@
   </div>
 </nav>
 <div class="c"><center style="font-family: comicSans; font-size: 70px; color: white">WELCOME GARIMA</center></div>
+<center>
+<button type="button" class="btn btn-primary btn-lg" onclick="location.href='add_librarian.html'">Add Librarian</button><br><br>
+<button type="button" class="btn btn-primary btn-lg" onclick="location.href='http://localhost/form/view_librarian.php'">View Librarian</button>
+</center>
 </body>
 </html>

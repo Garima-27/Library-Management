@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="script.js"></script> 
   <style type="text/css">
-  	.navbar{margin-bottom: 0px; }
-  	.navbar a{font-size: 18px}
-  	.navbar .icon{display: none}
+    .navbar{margin-bottom: 0px; }
+    .navbar a{font-size: 18px}
+    .navbar .icon{display: none}
     .a{padding-top: 50px}
     .row{padding-top: 60px;}
-  	@media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar .icon {display: block;}
 }
@@ -31,7 +30,7 @@
     <ul class="nav navbar-nav">
       <li ><a href="home.html">Home</a></li>
       <li><a href="add_librarian.html">Add Librarian</a></li>
-      <li><a href="#">View Librarian</a></li>
+      <li><a href="http://localhost/form/view_librarian.php">View Librarian</a></li>
       <li><a href="home.html">Logout</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -43,25 +42,25 @@
 <div class="row">
   <div class="col-xs-3"></div>
   <div class=col-xs-6>
-  <form>
+  <form action="http://localhost/form/view_librarian.php" method="post">
    <div class="form-group">
     <label for="usr"><font color="white" size="4">Name:</font></label>
-    <input type="text" class="form-control" id="usr">
+    <input type="text" class="form-control" id="usr" name="fullname" required>
    </div>
    <div class="form-group">
     <label for="email"><font color="white" size="4">Email Address:</font></label>
-    <input type="text" class="form-control" id="email">
+    <input type="text" class="form-control" id="email" name="email" required>
    </div>
    <div class="form-group">
     <label for="phn"><font color="white" size="4">Mobile Number:</font></label>
-    <input type="number" class="form-control" id="phn">
+    <input type="number" class="form-control" id="phn" name="phone" maxlength="10" required>
    </div>
    <div class="form-group">
     <label for="pwd"><font color="white" size="4">Password:</font></label>
-    <input type="password" class="form-control" id="pwd">
+    <input type="password" class="form-control" id="pwd" name="pswd" maxlength="16" required>
    </div>
+   <center><input type="submit" class="btn btn-primary" style="width: 100px" value="Add" name="save"></center>
  </form>
- <center><button class="btn btn-primary" style="width: 100px" onclick="chk1()"><font size="4">Add</font></button></center>
 </div>
 <div class="col-xs-3"></div>
 </div>
